@@ -37,6 +37,13 @@ h1 {
   border-right: 1px solid #bbb;
 }
 
+@media screen and (max-width: 600px) {
+  .topnav a {
+    border-right: none;
+  }
+  
+}
+
 .current {
   background-color: grey;
 }
@@ -280,6 +287,12 @@ body {
 
 .topnav a:hover {
   background-color: #555;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a {
+    padding: 10px;
+  }
 }
 
 .container {

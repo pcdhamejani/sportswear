@@ -7,12 +7,6 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: "helvetica neue", helvetica, arial, sans-serif;
-  font-size: 13px;
-  text-align: center;
-}
-
 h1 {
   padding-top: 20px;
 }
@@ -21,27 +15,44 @@ h1 {
   float: right;
   color: white;
   width: 210px;
-  font-size: 40px;
+  font-size: 25px;
   font-family: Century Gothic;
-  padding: 5px 10px;
+  padding-top: 7px;
 }
 
-.fix {
-  text-align: center;
-  font-size: 20px;
-  font-family: Century Gothic;
-  clear: both;
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .topnav {
+    text-align: left;
+    overflow: visible;
+  }
+
+  .topnav a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
 
 .topnav a {
   border-right: 1px solid #bbb;
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: Century Gothic;
+  transition: background-color 0.3s ease;
 }
 
-@media screen and (max-width: 600px) {
-  .topnav a {
-    border-right: none;
-  }
-  
+.topnav a:hover {
+  background-color: #555;
 }
 
 .current {
@@ -256,43 +267,18 @@ h6 {
 .jordan-brand {
   text-align: center;
 }
+
 body {
   line-height: 1.6;
-  padding: 20px;
   background-color: #f5f5f5;
   color: #333;
-  font-family: "helvetica neue", helvetica, arial, sans-serif;
   font-size: 13px;
   text-align: center;
-}
-.topnav {
-  background-color: #333;
-  overflow: hidden;
-  border-radius: 5px;
-  padding: 10px;
-  margin-bottom: 20px;
+  font-family: Century Gothic;
 }
 
-.topnav a {
-  float: left;
-  display: block;
-  color: #fff;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  font-family: "Roboto", sans-serif;
-  transition: background-color 0.3s ease;
-}
-
-.topnav a:hover {
-  background-color: #555;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav a {
-    padding: 10px;
-  }
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .container {
@@ -311,10 +297,6 @@ footer {
   color: #555;
 }
 
-.jordan-brand {
-  text-align: center;
-}
-
 #button0 {
   background-color: #f5f5f5;
   padding: 20px;
@@ -326,11 +308,13 @@ footer {
   font-size: 18px;
   margin: 10px;
 }
+
 @media screen and (min-width: 480px) {
   #registerform {
     max-width: 480px;
   }
 }
+
 ul {
   margin: 30px auto;
   text-align: center;
@@ -344,6 +328,7 @@ li {
   /* width: 100px;
   height: 100px; */
 }
+
 .brandimages {
   height: 190px;
   width: 190px;
@@ -351,4 +336,17 @@ li {
   margin: 10px;
   border: 1px solid #ccc;
   padding: 10px;
+}
+
+/* .brand-buttons {
+  display: flex;
+  justify-content: center;
+} */
+
+img {
+  max-width: 100%;
+}
+
+video {
+  max-width: 100%;
 }

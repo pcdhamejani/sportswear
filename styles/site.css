@@ -13,12 +13,6 @@ body {
   text-align: center;
 }
 
-.date00 {
-  font-size: 30px;
-  border: 1px solid black;
-  font-family: Orator STD;
-}
-
 h1 {
   padding-top: 20px;
 }
@@ -82,12 +76,10 @@ div#main {
 div#form_sample {
   text-align: center;
   border: 1px solid #ccc;
-  width: 600px;
   padding: 0 40px 15px;
   margin-top: 20px;
   box-shadow: 0 0 15px;
   border-radius: 6px;
-  float: left;
 }
 
 #main h1 {
@@ -289,6 +281,7 @@ body {
 .topnav a:hover {
   background-color: #555;
 }
+
 .container {
   border: 1px solid #ccc;
   padding: 20px;

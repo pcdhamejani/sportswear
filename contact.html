@@ -2,11 +2,7 @@
   <head>
     <title>Psports</title>
     <link href="styles/site.css" type="text/css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="shortcut icon" href="images/psportslogo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <div class="topnav" id="myTopnav">
@@ -22,11 +18,22 @@
       <h1>Contact Us</h1>
       <p>Feel Free To Contact Us</p>
       <form id="contact1">
-        <div id="form_sample"></div>
-        <script src="scripts/form.js"></script>
+        <div id="form_sample">
+          <form action="clothing.html">
+            <br />
+            <label for="dname">Your Name :</label>
+            <input type="text" name="dname" required />
+            <br />
+            <label for="demail">Your Email :</label>
+            <input type="email" name="demail" required />
+            <br />
+            <label for="dmessage">Your Message :</label>
+            <textarea name="dmessage" required></textarea>
+            <br />
+            <input type="submit" name="dsubmit" value="Submit" />
+          </form>
+        </div>
       </form>
     </div>
-    <!-- <a href="https://www.facebook.com" class="fa fa-facebook"></a>
-<a href="https://www.instagram.com" class="fa fa-instagram"></a> -->
   </body>
 </html>

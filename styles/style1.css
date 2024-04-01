@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+#navbar{
+    background: #333;
+}
+#logo{
+    font-size: 36px;
+    font-weight: bold;
+    color: wheat;
+    text-shadow: 3px 3px 2px aqua;
+    margin-bottom: 5px;
+}
+#logo span{
+    color: aliceblue;
+    font-size: 170%;
+}
+.navbar-toggler-icon {
+    background-image: url("card-list.svg");
+}
+.navbar-nav{
+    margin-left: 20px;
+}
+.nav-item .nav-link{
+    font-size: 20px;
+    font-weight: bold;
+    color: wheat;
+}
+.nav-item .nav-link:hover{
+    background: #555;
+    color: white;
+    border-radius: 6px;
+}
+#navbar form button{
+    background: limegreen;
+    color: white;
+}

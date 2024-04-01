@@ -44,6 +44,17 @@ h1 {
   display: none;
 }
 
+@media screen and (max-width:768px) {
+  div#main {
+    width: 20rem;
+    height: 5rem;
+  }
+
+  li {
+    margin-left: -70px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {
     display: none;
@@ -112,6 +123,7 @@ div#main {
   margin: 0 auto;
   font-family: "Ubuntu", sans-serif;
   padding: 10px;
+  max-width: 100%;
 }
 
 div#form_sample {
@@ -341,13 +353,16 @@ footer {
 ul {
   margin: 30px auto;
   text-align: center;
-  padding: 150px;
+  /* padding: 150px 0; */
+  margin: 200px 0;
+  width: 100%;
 }
 
 li {
   list-style: none;
   /* position: relative; */
   display: inline-block;
+  margin: 5px;
   /* width: 100px;
   height: 100px; */
 }
